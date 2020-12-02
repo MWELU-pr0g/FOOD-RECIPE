@@ -1,0 +1,156 @@
+html{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.image{
+    width: 100%;
+    height: 200%;
+}
+body{
+    background-color: blue!important;
+    height: 100%;
+}
+.mypic{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+.label{
+    font-display: center;
+    text-decoration-thickness: 30px;
+}
+h1 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+  }
+  h2 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+  }
+  .center{
+    text-align: center; 
+  }
+  .search
+  {
+      /* text-align: center; */
+      display: flex;
+  }
+  .btn
+  {
+      text-align: center;
+      display: flex;
+      width:800px; margin:0 auto;
+      margin-left: 300px;
+      margin-top: 20px;
+  }
+  .div-image{
+  width: 100%;
+  border-radius:8px ;
+  background-color: rgba(37,37,37);
+  padding: 15px;
+  overflow: hidden;
+  }
+ .item .flex-container {
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  }
+  .vrecipe{
+         color: whitesmoke;
+  }
+img{
+  width: 100%;
+  object-fit: cover;
+  height: 200%;
+  border-radius: 8px;
+}
+.title{
+  font-size: 27px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+
+}
+.txtInput{
+  width: 80%;
+    margin-top: 20px;
+    height: 54px;
+}
+.textInputInner{
+  width: 80%;
+    margin-top: 20px;
+    height: 54px;
+}
+.typeIngredient{
+  font-weight: bolder;
+    font-size: 21px;
+    margin-top: 55px;
+}
+.button4 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: inset;
+  border-radius: 5px;
+}
+.button3 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: inset;
+  border-radius: 5px;
+}
+form ion-icon{
+  width: 9%;
+  font-size:3rem;
+}
+.search-result{
+  width: 100%;
+  display: grid;
+  grid-gap:25px;
+  grid-template: auto/repeat(auto-fit,minmax(300px,1fr));
+  text-align: center;
+    margin-left: 400px;
+}
+.vbutton{
+  text-decoration: none;
+  text-align:center;
+  width: 130px;
+  padding: 10px 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  margin-top: 10px;
+}
+form ion-icon {
+  width: 8%;
+  font-size: 3rem;
+  margin-bottom: -16x;
+  color: rgb(75, 75, 75);
+  display: inline-block;
+}
+.icon{
+  margin-top: 20px;
+}
+
+09:19:45	SELECT CONCAT(class_date, ': ', class_time) AS Date, subjects.name AS Subject, concepts.name AS Concept, sub_concepts.name AS SubConcept,  admin_users.full_name as Teacher FROM live_classes JOIN grade ON live_classes.grade_id = grade.id JOIN subjects ON live_classes.subject_id = subjects.id JOIN concepts ON live_classes.concept_id = concepts.id JOIN sub_concepts ON live_classes.sub_concept_id = sub_concepts.id JOIN admin_users ON live_classes.teacher_id = admin_users.right_group ORDER BY live_classes.id DESC LIMIT 10live_classeslive_classes	Error Code: 1327. Undeclared variable: 10live_classeslive_classes	0.150 sec
